@@ -2,5 +2,4 @@
 
 Computational humanities spring 2019
 
-In progress.
-
+In progress. February.
