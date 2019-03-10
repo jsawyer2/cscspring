@@ -1,3 +1,6 @@
+import scala.io.Source
+import edu.holycross.shot.cite
+
 val myVector = Vector("a","b","c")
 
 println("hi!")
