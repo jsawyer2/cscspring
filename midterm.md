@@ -5,7 +5,7 @@ val myVector = Vector("a","b","c")
 
 println("hi!")
 
-val filepath:String = "texts/huckfinn.txt"
+val filepath:String = "Desktop/vm_spring_2019/workspace2019/texts/huckfinn.txt"
 val myLines:Vector[String] = Source.fromFile(filepath).getLines.toVector
 
 val wordVec: Vector[String] = {
