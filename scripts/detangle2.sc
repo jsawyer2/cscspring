@@ -6,10 +6,27 @@ case class IndexedLine(text:String, index:Int)
 case class ChapterHeading(title:String, index:Int)
 case class BookPara(chapterName:String, text:String, index:Int)
 
-val filepath:String = "texts/huckfinn3.txt"
+
+val cexHeader:String = """#!cexversion
+3.0
+
+#!citelibrary
+name#SOME_NAME
+urn#urn:cite2:cex:fufolio.2019a:twain_hf
+license#CC Share Alike.  For details, see more info.
+
+
+#!ctscatalog
+urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online#lang
+urn:cts:fuTexts:twain.finn.fu:#chapter/paragraph#Mark Twain#Huckleberry Finn#F.U. ed##true#eng
+
+#!ctsdata
+"""
+
+val filepath:String = "huckfinn3.txt"
 val myLines:Vector[String] = Source.fromFile(filepath).getLines.toVector.filter( _.size > 0 )
 
-def saveString(s:String, filePath:String = "texts/", fileName:String = "temp.txt"):Unit = {
+def saveString(s:String, filePath:String = "", fileName:String = "temp.txt"):Unit = {
 	val pw = new PrintWriter(new File(filePath + fileName))
 	for (line <- s.lines){
 		pw.append(line)
@@ -31,7 +48,7 @@ val indexedFileLines:Vector[IndexedLine] = myLines.zipWithIndex.map( ln => {
 val chapters:Vector[ChapterHeading] = {
   indexedFileLines.filter(_.text.startsWith("CHAPTER")).map( c => {
     val index:Int = c.index
-    val newTitle:String = c.text.replaceAll("CHAPTER ","")
+    val newTitle:String = c.text.replaceAll("CHAPTER ","").replaceAll("\\.","")
     new ChapterHeading(newTitle, index)
   })
 }
@@ -61,8 +78,9 @@ val chapterRanges:Vector[Vector[ChapterHeading]] = chapters.sliding(2,1).toVecto
     }
 
 
-  val bookParas:Vector[BookPara] = chapterParas.map( cp => {
-    new BookPara( thisChapt.title, cp.text, cp.index)
+ val bookParas:Vector[BookPara] = chapterParas.zipWithIndex.map (cp => {
+    val thisIndex:Int = cp._2 + 1
+    new BookPara( thisChapt.title, cp._1.text, thisIndex)
   })
 
   bookParas
@@ -87,8 +105,17 @@ val theLastChapter:Vector[BookPara] = {
   bookParas
 }
 
+val betterTLC:Vector[BookPara] = theLastChapter.zipWithIndex.map( a => {
+  // each "a" is a (BookPara, Int)
+  val thisIndex:Int = a._2 + 1
+  val oldPara:BookPara = a._1
+  val oldChap:String = oldPara.chapterName
+  val oldText:String = oldPara.text
+  BookPara(oldChap, oldText, thisIndex)
+})
+
 val allChapterLines:Vector[BookPara] = {
-  allButTheLastChapter ++ theLastChapter
+  allButTheLastChapter ++ betterTLC
 }
 
 val savableLines:Vector[String] = {
@@ -98,6 +125,6 @@ val savableLines:Vector[String] = {
   })
 }
 
-val stringToSave:String = savableLines.mkString("\n")
+val stringToSave:String = cexHeader + savableLines.mkString("\n")
 
 saveString(stringToSave)
