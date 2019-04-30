@@ -1,15 +1,19 @@
+
 #!cexversion
-3.0
+3.0.1
 
 #!citelibrary
-name#SOME_NAME
-urn#urn:cite2:cex:fufolio.2019a:twain_hf
-license#CC Share Alike.  For details, see more info.
 
+name#Homer Multitext project, release 2018 G
+urn#urn:cite2:hmt:publications.cex.2018g:all
+license#Creative Commons Attribution, Non-Commercial 4.0 License <https://creativecommons.org/licenses/by-nc/4.0/>.
+
+// CITE namespace definitions
+namespace#fufolio#http://folio2.furman.edu
 
 #!ctscatalog
 urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online#lang
-urn:cts:fuTexts:twain.finn.fu:#chapter/paragraph#Mark Twain#Huckleberry Finn#F.U. ed##true#eng
+urn:cts:fuTexts:twain.finn.fu:#book, stanza, line#Alexander Pope#Iliad (1713)#Furman Ed. 2019##true#eng
 
 #!ctsdata
 urn:cts:fuTexts:twain.finn.fu:I.1#YOU don't know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain't no matter.  That book was made by Mr. Mark Twain, and he told the truth, mainly.  There was things which he stretched, but mainly he told the truth.  That is nothing.  I never seen anybody but lied one time or another, without it was Aunt Polly, or the widow, or maybe Mary.  Aunt Polly--Tom's Aunt Polly, she is--and Mary, and the Widow Douglas is all told about in that book, which is mostly a true book, with some stretchers, as I said before.
@@ -2437,18 +2441,18 @@ urn:cts:fuTexts:twain.finn.fu:XLII.77#“They're in the trunk.  There, now.  A
 urn:cts:fuTexts:twain.finn.fu:XLII.78#“Well, you _do_ need skinning, there ain't no mistake about it.  And I wrote another one to tell you I was coming; and I s'pose he--”
 urn:cts:fuTexts:twain.finn.fu:XLII.79#“No, it come yesterday; I hain't read it yet, but _it's_ all right, I've got that one.”
 urn:cts:fuTexts:twain.finn.fu:XLII.80#I wanted to offer to bet two dollars she hadn't, but I reckoned maybe it was just as safe to not to.  So I never said nothing.
-urn:cts:fuTexts:twain.finn.fu:THE LAST.1#THE first time I catched Tom private I asked him what was his idea, time of the evasion?--what it was he'd planned to do if the evasion worked all right and he managed to set a nigger free that was already free before? And he said, what he had planned in his head from the start, if we got Jim out all safe, was for us to run him down the river on the raft, and have adventures plumb to the mouth of the river, and then tell him about his being free, and take him back up home on a steamboat, in style, and pay him for his lost time, and write word ahead and get out all the niggers around, and have them waltz him into town with a torchlight procession and a brass-band, and then he would be a hero, and so would we.  But I reckoned it was about as well the way it was.
-urn:cts:fuTexts:twain.finn.fu:THE LAST.2#We had Jim out of the chains in no time, and when Aunt Polly and Uncle Silas and Aunt Sally found out how good he helped the doctor nurse Tom, they made a heap of fuss over him, and fixed him up prime, and give him all he wanted to eat, and a good time, and nothing to do.  And we had him up to the sick-room, and had a high talk; and Tom give Jim forty dollars for being prisoner for us so patient, and doing it up so good, and Jim was pleased most to death, and busted out, and says:
-urn:cts:fuTexts:twain.finn.fu:THE LAST.3#“Dah, now, Huck, what I tell you?--what I tell you up dah on Jackson islan'?  I _tole_ you I got a hairy breas', en what's de sign un it; en I _tole_ you I ben rich wunst, en gwineter to be rich _agin_; en it's come true; en heah she is!  _dah_, now! doan' talk to _me_--signs is
-urn:cts:fuTexts:twain.finn.fu:THE LAST.4#_signs_, mine I tell you; en I knowed jis' 's well 'at I 'uz gwineter be rich agin as I's a-stannin' heah dis minute!”
-urn:cts:fuTexts:twain.finn.fu:THE LAST.5#And then Tom he talked along and talked along, and says, le's all three slide out of here one of these nights and get an outfit, and go for howling adventures amongst the Injuns, over in the Territory, for a couple of weeks or two; and I says, all right, that suits me, but I ain't got no money for to buy the outfit, and I reckon I couldn't get none from home, because it's likely pap's been back before now, and got it all away from Judge Thatcher and drunk it up.
-urn:cts:fuTexts:twain.finn.fu:THE LAST.6#“No, he hain't,” Tom says; “it's all there yet--six thousand dollars and more; and your pap hain't ever been back since.  Hadn't when I come away, anyhow.”
-urn:cts:fuTexts:twain.finn.fu:THE LAST.7#Jim says, kind of solemn:
-urn:cts:fuTexts:twain.finn.fu:THE LAST.8#“He ain't a-comin' back no mo', Huck.”
-urn:cts:fuTexts:twain.finn.fu:THE LAST.9#I says:
-urn:cts:fuTexts:twain.finn.fu:THE LAST.10#“Why, Jim?”
-urn:cts:fuTexts:twain.finn.fu:THE LAST.11#“Nemmine why, Huck--but he ain't comin' back no mo.”
-urn:cts:fuTexts:twain.finn.fu:THE LAST.12#But I kept at him; so at last he says:
-urn:cts:fuTexts:twain.finn.fu:THE LAST.13#“Doan' you 'member de house dat was float'n down de river, en dey wuz a man in dah, kivered up, en I went in en unkivered him and didn' let you come in?  Well, den, you kin git yo' money when you wants it, kase dat wuz him.”
-urn:cts:fuTexts:twain.finn.fu:THE LAST.14#Tom's most well now, and got his bullet around his neck on a watch-guard for a watch, and is always seeing what time it is, and so there ain't nothing more to write about, and I am rotten glad of it, because if I'd a knowed what a trouble it was to make a book I wouldn't a tackled it, and ain't a-going to no more.  But I reckon I got to light out for the Territory ahead of the rest, because Aunt Sally she's going to adopt me and sivilize me, and I can't stand it.  I been there before.
-urn:cts:fuTexts:twain.finn.fu:THE LAST.15#THE END. YOURS TRULY, _HUCK FINN_.
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.1#THE first time I catched Tom private I asked him what was his idea, time of the evasion?--what it was he'd planned to do if the evasion worked all right and he managed to set a nigger free that was already free before? And he said, what he had planned in his head from the start, if we got Jim out all safe, was for us to run him down the river on the raft, and have adventures plumb to the mouth of the river, and then tell him about his being free, and take him back up home on a steamboat, in style, and pay him for his lost time, and write word ahead and get out all the niggers around, and have them waltz him into town with a torchlight procession and a brass-band, and then he would be a hero, and so would we.  But I reckoned it was about as well the way it was.
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.2#We had Jim out of the chains in no time, and when Aunt Polly and Uncle Silas and Aunt Sally found out how good he helped the doctor nurse Tom, they made a heap of fuss over him, and fixed him up prime, and give him all he wanted to eat, and a good time, and nothing to do.  And we had him up to the sick-room, and had a high talk; and Tom give Jim forty dollars for being prisoner for us so patient, and doing it up so good, and Jim was pleased most to death, and busted out, and says:
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.3#“Dah, now, Huck, what I tell you?--what I tell you up dah on Jackson islan'?  I _tole_ you I got a hairy breas', en what's de sign un it; en I _tole_ you I ben rich wunst, en gwineter to be rich _agin_; en it's come true; en heah she is!  _dah_, now! doan' talk to _me_--signs is
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.4#_signs_, mine I tell you; en I knowed jis' 's well 'at I 'uz gwineter be rich agin as I's a-stannin' heah dis minute!”
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.5#And then Tom he talked along and talked along, and says, le's all three slide out of here one of these nights and get an outfit, and go for howling adventures amongst the Injuns, over in the Territory, for a couple of weeks or two; and I says, all right, that suits me, but I ain't got no money for to buy the outfit, and I reckon I couldn't get none from home, because it's likely pap's been back before now, and got it all away from Judge Thatcher and drunk it up.
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.6#“No, he hain't,” Tom says; “it's all there yet--six thousand dollars and more; and your pap hain't ever been back since.  Hadn't when I come away, anyhow.”
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.7#Jim says, kind of solemn:
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.8#“He ain't a-comin' back no mo', Huck.”
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.9#I says:
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.10#“Why, Jim?”
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.11#“Nemmine why, Huck--but he ain't comin' back no mo.”
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.12#But I kept at him; so at last he says:
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.13#“Doan' you 'member de house dat was float'n down de river, en dey wuz a man in dah, kivered up, en I went in en unkivered him and didn' let you come in?  Well, den, you kin git yo' money when you wants it, kase dat wuz him.”
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.14#Tom's most well now, and got his bullet around his neck on a watch-guard for a watch, and is always seeing what time it is, and so there ain't nothing more to write about, and I am rotten glad of it, because if I'd a knowed what a trouble it was to make a book I wouldn't a tackled it, and ain't a-going to no more.  But I reckon I got to light out for the Territory ahead of the rest, because Aunt Sally she's going to adopt me and sivilize me, and I can't stand it.  I been there before.
+urn:cts:fuTexts:twain.finn.fu:THE_LAST.15#THE END. YOURS TRULY, _HUCK FINN_.
