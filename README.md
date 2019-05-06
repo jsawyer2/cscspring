@@ -1,5 +1,3 @@
-# cscspring
+# Fall 2018 Virtual Machine
 
-Computational humanities spring 2019
-
-In progress. February.
+[Documentation is here.](https://eumaeus.github.io/fall2018vm/)
